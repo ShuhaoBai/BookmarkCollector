@@ -15,9 +15,7 @@ $("#post-bookmark").submit(function (event) {
             if(result["success"] == "Updated Successfully") {
                 alert('Upload successfully!');
                 window.location.href = '/'
-            }
-            else
-            if(result["success"] == "Updated failed") {
+            } else if(result["success"] == "Updated failed") {
                 alert('Bookmark exists!');
             }
         },

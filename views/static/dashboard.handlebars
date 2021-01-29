@@ -165,7 +165,9 @@
                                 <h1 class="modal-title">Confirm Deletion</h1>
                             </div>
                             <div class="modal-body">
-                                <p>Sure to Delete Bookmark with ID: <span id="bookmarkID"></span>?</p>
+                                <p>Sure to Delete Bookmark with ID:</p>
+                                <p id="bookmarkID"></p>
+                                <p>?</p>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -349,7 +351,7 @@
                                                         </svg>
                                                 </div> 
                                             </div>
-                                        </a>--}}
+                                        </a> --}}
 
                                         <!-- Sharingbutton LinkedIn -->
                                         <a aria-label="share button for LinkedIn" class="resp-sharing-button__link"
@@ -493,8 +495,14 @@
     $(document).ready(function () {
         $('.favoriteBtn.No').addClass("btn btn-primary");
         $('.favoriteBtn.No').text('Add to Favorite');
+        $('.favoriteBtn.No').click(function(){
+            location.reload();
+        });
         $('.favoriteBtn.Yes').addClass("btn btn-secondary");
         $('.favoriteBtn.Yes').text('Remove from Favorite');
+        $('.favoriteBtn.Yes').click(function(){
+            location.reload();
+        });
     })
 </script>
 

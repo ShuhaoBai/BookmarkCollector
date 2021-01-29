@@ -34,12 +34,11 @@ async function addBookmark(genre, description, url, id) {
 
 async function deleteBookmarkByID(id) {
     validateInputParam(id, "id");
-
+    console.log("###################" + id);
     const bookmarkCollection = await book();
     const bookmarkToBeDelated = await bookmarkCollection.findOne({
         _id: ObjectID(id)
     });
-
     const deletionInfo = await bookmarkCollection.removeOne({
         _id: ObjectID(id)
     });

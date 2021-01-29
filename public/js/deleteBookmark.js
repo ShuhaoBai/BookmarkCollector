@@ -1,9 +1,7 @@
 $(document).ready(function () {
     $("#delete-bookmark-confirm-button").click(function (event) {
         event.preventDefault();
-        var genre = $("#bookCategory").val().toLowerCase(),
-            description = $("#bookDes").val(),
-            id = $("#bookmarkID").text();
+        var id = $("#bookmarkID").text();
         const redirect = window.location.href;    
         $.ajax({
             type: "DELETE",
