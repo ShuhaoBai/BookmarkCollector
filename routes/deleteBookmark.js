@@ -19,6 +19,4 @@ router.delete("/", async (req, res) => {
     res.end('{"success" : "Deleted Successfully", "status" : 200, "redirect": "/dashboard"}');
 });
 
-
-
 module.exports = router;

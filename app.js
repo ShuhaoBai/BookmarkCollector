@@ -20,22 +20,6 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-// app.use(passport.authenticate('remember-me'));
-
-// var log = async (req, res, next) => {
-//   let currentTime = new Date().toUTCString();
-//   let method = req.method;
-//   let route = req.originalUrl;
-//   let something = "";
-//   if (req.session.passport) {
-//     something = "(Authenticated User)";
-//   } else {
-//     something = "(Non-Authenticated User)";
-//   }
-//   console.log("[" + currentTime + "]: " + method + " " + route + " " + something);
-//   next();
-// };
-
 app.use(flash());
 app.use(function (req, res, next) {
   res.locals.success_msg = req.flash('success_msg');
@@ -59,7 +43,7 @@ app.set("view engine", "handlebars");
 
 configRoutes(app);
 
-app.listen(3000, () => {
+app.listen(3001, () => {
   console.log("We've now got a server!");
-  console.log("Your routes will be running on http://localhost:3000");
+  console.log("Your routes will be running on http://localhost:3001");
 });

@@ -2,7 +2,6 @@ const express = require("express");
 const router = express.Router();
 const data = require("../data");
 const xss = require("xss");
-const passport = require("passport");
 
 const addBookmark = data.bookmark;
 

@@ -13,19 +13,12 @@ $("#edit-bookmark").submit(function (event) {
         },
         dataType: "json",
         success: function (result) {
-            //if(result["success"] == "Updated Successfully") {
-                alert('Upload successfully!');
-                window.location.href = redirect;
-            //}
-            //else
-            //if(result["success"] == "Updated failed") {
-              //  alert('Bookmark exists!');
-            //}
+            alert('Upload successfully!');
+            window.location.href = redirect;
         },
         error: function (result) {
             console.log(result);
             alert("error");
         }
     });
-    //return false;
 });

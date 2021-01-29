@@ -4,7 +4,6 @@
     <!-- Sidebar -->
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar"
         aria-label="side bar">
-
         <!-- Sidebar - Brand -->
         <li>
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/dashboard">
@@ -15,7 +14,6 @@
             </a>
         </li>
         <!-- Divider -->
-
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item active">
@@ -33,10 +31,7 @@
             </a>
         </li>
 
-
         <!-- Divider -->
-
-
         <li class="nav-item" id="accordionExample">
             <div class="card d-flex align-items-center justify-content-center">
                 <div class="card-header" id="headingOne">
@@ -75,12 +70,6 @@
 
             <!-- Topbar -->
             <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow" aria-label="toolbar">
-
-                <!-- Sidebar Toggle (Topbar) -->
-                {{!-- <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                    <i class="fa fa-bars"></i>
-                </button> --}}
-
                 <!-- Topbar Search -->
                 <form id="searchForm" method="POST" action="/dashboard"
                     class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
@@ -95,7 +84,6 @@
                         </div>
                     </div>
                 </form>
-
 
                 <!-- Add Url -->
                 <div class="input-group justify-content-end">
@@ -288,7 +276,6 @@
                 <p class="mb-4">All your bookmark collections are here.</p>
                 <!-- End of Page Heading -->
 
-
                 <!-- Content Row -->
                 <div class="row">
                     <!-- Note: the bookmark cards starts populating here -->
@@ -336,22 +323,6 @@
                                                 </div>
                                             </div>
                                         </a>
-
-                                        <!-- Sharingbutton E-Mail -->
-                                        {{!-- <a aria-label="share button for E-Mail" class="resp-sharing-button__link"
-                                            href="mailto:?subject=Hey%20check%20out%20my%20this%20cool%20site%3A%20{{this.url}}&amp;body={{this.url}}"
-                                            target="_self" rel="noopener">
-                                            <div aria-label="share button for E-Mail"
-                                                class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small">
-                                                 <div aria-hidden="true"
-                                                    class="resp-sharing-button__icon resp-sharing-button__icon--solid">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                        <path
-                                                            d="M22 4H2C.9 4 0 4.9 0 6v12c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM7.25 14.43l-3.5 2c-.08.05-.17.07-.25.07-.17 0-.34-.1-.43-.25-.14-.24-.06-.55.18-.68l3.5-2c.24-.14.55-.06.68.18.14.24.06.55-.18.68zm4.75.07c-.1 0-.2-.03-.27-.08l-8.5-5.5c-.23-.15-.3-.46-.15-.7.15-.22.46-.3.7-.14L12 13.4l8.23-5.32c.23-.15.54-.08.7.15.14.23.07.54-.16.7l-8.5 5.5c-.08.04-.17.07-.27.07zm8.93 1.75c-.1.16-.26.25-.43.25-.08 0-.17-.02-.25-.07l-3.5-2c-.24-.13-.32-.44-.18-.68s.44-.32.68-.18l3.5 2c.24.13.32.44.18.68z" />
-                                                        </svg>
-                                                </div> 
-                                            </div>
-                                        </a> --}}
 
                                         <!-- Sharingbutton LinkedIn -->
                                         <a aria-label="share button for LinkedIn" class="resp-sharing-button__link"
@@ -408,7 +379,6 @@
             </div>
             <!-- End Page Content (/.container-fluid) -->
 
-
             <!-- Footer -->
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
@@ -446,7 +416,6 @@
 </div>
 
 
-
 <!-- Bootstrap core JavaScript-->
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -467,7 +436,6 @@
         $('#editBookCategory').val(genre);
         $('#editBookDes').text(des);
         $('#editBookmarkURL').val(url);
-        //$('#urlModalLabel').text('Edit Bookmark');
         $('#editModal').modal('show');
     }
     function showDeleteModal(id) {
@@ -505,5 +473,4 @@
         });
     })
 </script>
-
 <!-- END Page level plugins -->

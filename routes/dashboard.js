@@ -1,8 +1,6 @@
 const express = require("express");
 const router = express.Router();
 const data = require("../data");;
-const passport = require("passport");
-const bookmarkFunc = require("../data/bookmark");
 
 const userInfo = data.userData;
 const bookmark = data.bookmark;

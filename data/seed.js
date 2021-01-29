@@ -12,21 +12,6 @@ const main = async () => {
 
     let userTony = await register.create("Tony", "Stark", "45", "Male", "New York", "NY", "US", "tony-stark@avengers.com", "201-111-1111", "iamironman123");
 
-    // let userList = [];
-    // test resgister.create() 
-    // let test = await register.create("Tony", "Stark", "45", "Male", "New York", "NY", "US", "tony-stark@avengers.com", 201 - 111 - 1111, "iamironman123");
-
-    // userList.push();
-    // userList.push(await register.create("Steve", "Rogers", "78", "Male", "New York", "NY", "US", "steve-rogers@avengers.com", "201-111-1112", "language!123"));
-    // userList.push(await register.create("Thor", "Odinson", "1500", "Male", "New Asgadian", "NY", "US", "thor-odinson@avengers.com", "201-111-1113", "iamodinson123"));
-
-    // let bookmarkList = [];
-
-    // for (i in userList) {
-    //     let userId = userList[i]._id;
-    //     bookmarkList.push(await bookmark.addBookmark("search", "search engine", "www.google.com", userId));
-    // }
-
     await bookmark.addBookmark("search", "Google search engine", "https://www.google.com", userTony._id.toString());
     await bookmark.addBookmark("search", "Baidu search engine, it searches Chinese characters well", "https://www.baidu.com", userTony._id.toString());
     await bookmark.addBookmark("search", "Microsoft search engine, it is okay but its marketshare is so sad", "https://www.bing.com", userTony._id.toString());
